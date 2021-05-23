@@ -74,10 +74,10 @@ http://www.tooplate.com/view/2109-the-card
                 </h2>
                 <div class="tm-textbox tm-bg-dark">
                   <p>
-                    The Card template is last updated on 21 May 2019. Read More button is linked to second page. You can try it now. External link button is added on main menu.
+                    Hey Coders! Aquí encontraras cupones sobre mis cursos al precio mas económico que me permite Udemy. 
                   </p>
                   <p class="mb-0">
-                    Please tell your friends about Tooplate for free templates. This is 70% alpha background.
+                    Si compras los cursos a traves de los cupones, ayudas a los Instructores ya que el 97% del total de la compra va para èl.
                   </p>
                 </div>
                 <a href="#" id="tm_about_link" data-linkid="2" class="tm-link">IR A CURSOS</a>
@@ -87,39 +87,37 @@ http://www.tooplate.com/view/2109-the-card
               <section class="tm-section tm-section-2 mx-auto">
                 <div class="grid tm-gallery">
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="img/flores.jpg" alt="Image 1" class="" />
+                    <img src="img/angular10b.png" alt="Image 1" class="" />
                     <figcaption>
-                      <h2>
-                        ANGULAR
-                        <span>Goliath</span>
+                      <h2 style="width: 100%;">
+                        
+                        <span>CURSO ANGULAR</span>
                       </h2>
-                      <p>When Goliath comes out, you should run.</p>
-                      <a href="https://www.udemy.com/instructor/performance/overview/revenue?date_filter=year">View more</a>
+                      <p>Angular - La Guia Completa + 15 Proyectos</p>
+                      <a href="https://www.udemy.com/instructor/performance/overview/revenue?date_filter=year" target="_blank">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="img/02.jpg" alt="Pretty Girl" class="" />
+                    <img src="img/angnetcore.png" alt="Pretty Girl" class="" />
                     <figcaption>
-                      <h2>
-                        Pretty Girl
-                        <span>Picture</span>
+                      <h2 style="width: 100%;">
+                        <span>ANGULAR - NET CORE</span>
                       </h2>
-                      <p>Vivamus feugiat, neque sed.</p>
-                      <a href="img/02.jpg">View more</a>
+                      <p>Angular - Net Core - Aplicacion de Preguntas y Respuestas</p>
+                      <a href="img/angfirebase.jpg">View more</a>
                     </figcaption>
                   </figure>
                   <figure class="effect-goliath tm-gallery-item">
-                    <img src="img/03.jpg" alt="Red Flowers" class="" />
+                    <img src="img/angfirebase.png" alt="Red Flowers" class="" />
                     <figcaption>
-                      <h2>
-                        A bunch of
-                        <span>Red Flower</span>
+                      <h2 style="width: 100%;">
+                        <span>Angular - Firebase</span>
                       </h2>
-                      <p>Integer pellentesque nisi iaculis sapien.</p>
+                      <p>Angular - Firebase Aplicacion de Preguntas y Respuestas.</p>
                       <a href="img/03.jpg">View more</a>
                     </figcaption>
                   </figure>
-                  <figure class="effect-goliath tm-gallery-item">
+                  <!-- <figure class="effect-goliath tm-gallery-item">
                     <img src="img/04.jpg" alt="Stairs" class="" />
                     <figcaption>
                       <h2>
@@ -217,7 +215,7 @@ http://www.tooplate.com/view/2109-the-card
                       <p>When Goliath comes out, you should run.</p>
                       <a href="img/12.jpg">View more</a>
                     </figcaption>
-                  </figure>
+                  </figure> -->
                 </div>
               </section>
 
@@ -276,7 +274,7 @@ http://www.tooplate.com/view/2109-the-card
           }
         });
 
-        adjustFooter();
+       /*  adjustFooter(); */
       }
 
       $(document).ready(function() {
@@ -288,14 +286,15 @@ http://www.tooplate.com/view/2109-the-card
         // https://www.jqueryscript.net/slideshow/Simple-jQuery-Background-Image-Slideshow-with-Fade-Transitions-Background-Cycle.html
         bgCycle = $("body").backgroundCycle({
           imageUrls: [
-            "img/photo-02.jpg",
+            /* "img/photo-02.jpg", */
+            'img/image2.png',
             "img/photo-03.jpg",
-            "img/photo-04.jpg",
+            "img/image.png",
             "img/photo-05.jpg"
           ],
           fadeSpeed: 2000,
           duration: -1,
-          backgroundSize: SCALING_MODE_COVER
+          backgroundSize: SCALING_MODE_COVER,
         });
 
         eachNavLink = $(".tm-nav-link");
@@ -332,28 +331,12 @@ http://www.tooplate.com/view/2109-the-card
           }
 
           // Adjust footer
-          adjustFooter();
+        /*   adjustFooter(); */
         });
 
-        adjustFooter();
+       /*  adjustFooter(); */
       }); // DOM is ready
 
-      function adjustFooter() {
-        const windowHeight = $(window).height();
-        const topHeight = $(".tm-top-container").height();
-        const middleHeight = $(".tm-content").height();
-        let contentHeight = topHeight + middleHeight;
-
-        if (pageAlign === "left") {
-          contentHeight += $(".tm-bottom-container").height();
-        }
-
-        if (contentHeight > windowHeight) {
-          $(".tm-bottom-container").addClass("tm-static");
-        } else {
-          $(".tm-bottom-container").removeClass("tm-static");
-        }
-      }
 
       function setupSlider() {
         let slidesToShow = 3;
@@ -371,13 +354,13 @@ http://www.tooplate.com/view/2109-the-card
           slidesToScroll = 2;
         }
 
-        if (slickInitDone) {
+       /*  if (slickInitDone) {
           $(".tm-gallery").slick("unslick");
-        }
+        } */
 
         slickInitDone = true;
 
-        $(".tm-gallery").slick({
+    /*   $(".tm-gallery").slick({
           dots: true,
           customPaging: function(slider, i) {
             var thumb = $(slider.$slides[i]).data();
@@ -388,7 +371,7 @@ http://www.tooplate.com/view/2109-the-card
           nextArrow: false,
           slidesToShow: slidesToShow,
           slidesToScroll: slidesToScroll
-        });
+        });  */
 
         // Open big image when a gallery image is clicked.
         $(".slick-list").magnificPopup({
@@ -397,7 +380,7 @@ http://www.tooplate.com/view/2109-the-card
           gallery: {
             enabled: true
           }
-        });
+        }); 
       }
     </script>
   </body>

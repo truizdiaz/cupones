@@ -226,7 +226,7 @@ footer {
   clear: both;
   margin: 0 auto;
   padding: 1em 0 4em;
-  max-width: 880px;
+  max-width: 980px;
   width: 100%;
   list-style: none;
   text-align: center;
@@ -237,11 +237,12 @@ footer {
   position: relative;
   float: left;
   overflow: hidden;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .grid figure img {
